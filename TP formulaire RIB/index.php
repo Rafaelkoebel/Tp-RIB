@@ -7,7 +7,7 @@
     <title>Formulaire</title>
 </head>
 <body>
-    <form action="http://localhost:8080/TP%20formulaire%20RIB/traitement.php" method="POST">
+    <form action="http://localhost/Tp-RIB/Tp%20formulaire%20RIB/traitement.php" method="POST">
 
        <p><input type="number" name="banque" placeholder="banque"></p>
        <p><input type="number" name="guichet" placeholder="guichet"></p>
@@ -21,8 +21,8 @@
     if (isset($_GET['succes'])) {
         echo "<script>alert(\"valide\")</script>";
     }
-    else{
-        echo "<script>alert(\"pas valide\")</script>";
+    if (isset($_GET['error'])) {
+        echo "<script>alert(\"non valide\")</script>";
     }
     ?>
 

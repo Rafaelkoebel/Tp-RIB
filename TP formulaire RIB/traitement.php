@@ -29,7 +29,6 @@
         header('Location: index.php?error');
 
     };
-
 ?>
 </body>
 </html>
