@@ -17,7 +17,7 @@ class RibValidator{
                             'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
                             '12345678912345678923456789');
         $key = 97 - ((89 * $this->banque + 15 * $this->guichet + 3 * $account) % 97) ;
-        var_dump($key);
+        //var_dump($key);
         return $key === $this->cléf;
     } 
 

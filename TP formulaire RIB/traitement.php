@@ -19,15 +19,16 @@
     include_once("rib.class.php");
     $rib = new RibValidator($banque, $guichet, $compte, $cléf);
 
-    var_dump($rib);
-    echo "<br/>";
+    //var_dump($rib);
+    //echo "<br/>";
 
     if ($rib->isValid()){
         header('Location: index.php?succes');
+        exit;
     }
     else{
         header('Location: index.php?error');
-
+        exit;
     };
 ?>
 </body>
